@@ -18,9 +18,9 @@ module.exports = {
         var text = a.text();
         if (re.test(text)) {
           text = text
-            .replace(/^\s*\[ \]\s*/, '<input type="checkbox" disabled="disabled"></i> ')
-            .replace(/^\s*\[x\]\s*/, '<input type="checkbox" disabled="disabled" checked="checked"></i> ');
-          a.replaceWith('<li class="checkbox">' + text + '</li>');
+            .replace(/^\s*\[ \]\s*/, '<input type="checkbox" disabled="disabled"><span>')
+            .replace(/^\s*\[x\]\s*/, '<input type="checkbox" disabled="disabled" checked="checked"><span>');
+          a.replaceWith('<li class="checkbox">' + text + '</span></li>');
         }
       });
       page.content = $.html();
