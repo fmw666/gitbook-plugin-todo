@@ -4,6 +4,12 @@ var _ = require('underscore');
 var re = /^\s*\[[x ]\]\s*/;
 
 module.exports = {
+  book: {
+    assets: './assets',
+    css: [
+      "plugin.css"
+    ]
+  },
   hooks: {
     page: function (page) {
       var $ = cheerio.load(page.content);
@@ -14,7 +20,7 @@ module.exports = {
           text = text
             .replace(/^\s*\[ \]\s*/, '<input type="checkbox" disabled="disabled"></i> ')
             .replace(/^\s*\[x\]\s*/, '<input type="checkbox" disabled="disabled" checked="checked"></i> ');
-          a.replaceWith('<li style="list-style: none">' + text + '</li>');
+          a.replaceWith('<li class="checkbox">' + text + '</li>');
         }
       });
       page.content = $.html();
