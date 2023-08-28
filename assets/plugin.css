@@ -1,0 +1,10 @@
+.checkbox {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox > input[type=checkbox]{
+  margin-left: -2em;
+  margin-right: 0.4em;
+}
