@@ -1,7 +1,7 @@
 .checkbox {
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .checkbox > input[type=checkbox]{
