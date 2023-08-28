@@ -11,7 +11,7 @@
   "engines": {
     "gitbook": "*"
   },
-  "author": "LingyuCoder",
+  "author": "fmw666",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.19.0",
@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LingyuCoder/gitbook-plugin-todo.git"
+    "url": "https://github.com/fmw666/gitbook-plugin-todo.git"
   },
   "bugs": {
-    "url": "https://github.com/LingyuCoder/gitbook-plugin-todo/issues"
+    "url": "https://github.com/fmw666/gitbook-plugin-todo/issues"
   },
-  "homepage": "https://github.com/LingyuCoder/gitbook-plugin-todo"
+  "homepage": "https://github.com/fmw666/gitbook-plugin-todo"
 }
